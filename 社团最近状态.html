@@ -6,8 +6,8 @@
 <title>社团最近动态</title>
 	<style type="text/css">
 		.one{
-			width: 450px;
-			height: 30px;
+			width: 1000px;
+			height: 200px;
 			line-height: 30px;
 			background: #fcc;
 			font-size: 18px;
@@ -28,17 +28,27 @@
 			background: #E2CBCC;
 			border:8px solid #000000;
 		}
+		h1{border-style: dotted;} /*<!--双实线--> 上下 上右左下*/
+		.three{border-style: dotted solid;}/* <!--边狂上下点线，左右实线-->*/
+		.four{border-style: solid dotted dashed;} /*<!--上实线，左右点线，下虚线-->*/
+		.five{border-width: 10px;}/*边框宽度*/
+		.six{border:8px solid #87764F;border-radius: 100px/100px ;}/*/50px 一个参数四角直径，两个参数：左上+右下 右上+左下 三个参数：左上 右上+左下 右下 四个参数：左上 右上 右下 左下*/
+		p{border-style:solid;border-top-colors:#E6D8D8 #1A55B0 #3FE319;}/*定义文字p边框格式虚线，实线等，border-color: #E6D8D8;颜色 上边 右边 下边 左边 渐变色没有还早呢*/
+		h2{border:3px double #1E13D3;}/*2级标题3像素宽 （宽度）双实线（样式），蓝色（颜色）*/
 		</style>
 </head>
 <h1>看啥呢，没有！</h1>
-	<p>作为一个示利来判断css3样式表的调用</p>
+	<p class="three">作为一个示利来判断css3样式表的调用</p>
 <div class="one">
-		div盒子1
-</div>
+		<p class="four">div盒子1</p>
+
 	<div class="two">
-		<p>莫高电平时赶紧</p>
-		</div>
+		<p class="five">莫高电平时赶  ，紧乌拉框架</p>
+		</div></div>
 	<p class="box">盒子边框宽</p>
+	<p class="five">渐变色出来</p>
+<h2>设置标题是咧</h2>
+	<img class="six" src="礼仪.jpg" alt="圆角边框"/>
 <body>
 </body>
 </html>
