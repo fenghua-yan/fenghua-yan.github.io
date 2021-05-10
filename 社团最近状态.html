@@ -22,17 +22,33 @@
 			font-size: 14px;
 			text-indent:2em;
 		}
-		.box{
+		.box1{
 			width:200px;
 			height: 80px;
 			background: #E2CBCC;
 			border:8px solid #000000;
+		}
+		.box2{
+			width: 300px;
+			height: 300px;
+			border-style: solid;
+			border-image-source: url("图标.png");
+			border-image-slice: 33%;
+			border-width: 41px;
+			border-image-outset: 0;
+			border-image-repeat:repeat;
 		}
 		h1{border-style: dotted;} /*<!--双实线--> 上下 上右左下*/
 		.three{border-style: dotted solid;}/* <!--边狂上下点线，左右实线-->*/
 		.four{border-style: solid dotted dashed;} /*<!--上实线，左右点线，下虚线-->*/
 		.five{border-width: 10px;}/*边框宽度*/
 		.six{border:8px solid #87764F;border-radius: 100px/100px ;}/*/50px 一个参数四角直径，两个参数：左上+右下 右上+左下 三个参数：左上 右上+左下 右下 四个参数：左上 右上 右下 左下*/
+		.seven{border: 5px solid #958686;}
+		img{
+			padding:50px;
+			padding-bottom: 0;
+		}
+		p{padding:5%}
 		p{border-style:solid;border-top-colors:#E6D8D8 #1A55B0 #3FE319;}/*定义文字p边框格式虚线，实线等，border-color: #E6D8D8;颜色 上边 右边 下边 左边 渐变色没有还早呢*/
 		h2{border:3px double #1E13D3;}/*2级标题3像素宽 （宽度）双实线（样式），蓝色（颜色）*/
 		</style>
@@ -43,12 +59,16 @@
 		<p class="four">div盒子1</p>
 
 	<div class="two">
+		
 		<p class="five">莫高电平时赶  ，紧乌拉框架</p>
 		</div></div>
-	<p class="box">盒子边框宽</p>
+	<p class="box1">盒子边框宽</p>
 	<p class="five">渐变色出来</p>
 <h2>设置标题是咧</h2>
-	<img class="six" src="礼仪.jpg" alt="圆角边框"/>
+	
+<div class="box2"></div>
+<img class="seven"  src="01efdb58d9ba4fa801219c77ece179.jpg@1280w_1l_2o_100sh.jpg"/>
+	<p class="seven">段落内边距为父元素宽度5%</p>
 <body>
 </body>
 </html>
