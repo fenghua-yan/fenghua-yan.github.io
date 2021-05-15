@@ -22,13 +22,13 @@
 			font-size: 14px;
 			text-indent:2em;
 		}
-		.box1{
+		.box0{
 			width:200px;
 			height: 80px;
 			background: #E2CBCC;
 			border:8px solid #000000;
 		}
-		.box2{
+		.box1{
 			width: 300px;
 			height: 300px;
 			border-style: solid;
@@ -38,21 +38,83 @@
 			border-image-outset: 0;
 			border-image-repeat:repeat;
 		}
+		.box2{
+			width: 300px;
+			height: 100px;
+			padding-right: 10px;
+			border:10px  solid #D9B6B7; 
+			background: #392526;
+			box-sizing: content-box;
+		}
+		.box3{width: 300px;
+			height: 100px;
+			padding-right: 10px;
+			border:10px  solid #D9B6B7; 
+			background: #392526;
+			box-sizing:content-box;
+		}
+		#box4{
+			width: 330px;
+			margin:10px auto;
+			
+			border:1px solid #ff6666; 
+			/*border:solid 1px #D9B6B7;*/ 	
+		}	
+		
 		h1{border-style: dotted;} /*<!--双实线--> 上下 上右左下*/
 		.three{border-style: dotted solid;}/* <!--边狂上下点线，左右实线-->*/
 		.four{border-style: solid dotted dashed;} /*<!--上实线，左右点线，下虚线-->*/
 		.five{border-width: 10px;}/*边框宽度*/
 		.six{border:8px solid #87764F;border-radius: 100px/100px ;}/*/50px 一个参数四角直径，两个参数：左上+右下 右上+左下 三个参数：左上 右上+左下 右下 四个参数：左上 右上 右下 左下*/
 		.seven{border: 5px solid #958686;}
+		.eight{
+			width:300px;
+			border:5px solid red;
+			float:left;
+			margin-right: 50px;/*图像右边外距离*/
+			margin-left: 30px;
+			/*上边两行代码等于margin:0 50px 0 30px;*/
+			padding-bottom: 25px;
+		}
+		.nine{
+			width:300px;
+			border:5px solid red;
+			float: right;
+			margin-right: 50px;/*图像右边外距离*/
+			margin-left: 30px;
+			/*上边两行代码等于margin:0 50px 0 30px;*/
+			padding-bottom: 35px;
+			box-shadow: 5px 5px 20px 2px  yellow inset,-5px -5px 20px 2px  #333 inset;/*阴影设置 水平 xx 垂直xx  模糊半径  扩展半径 颜色 内阴影*/
+		}
 		img{
 			padding:50px;
 			padding-bottom: 0;
 		}
+		img:first-child{opacity: 1;}/*图片虚化函数opacity*/
+		img:nth-child(2){opacity: 0.8;}
+		img:nth-child(3){opacity: 0.5;}
+		img:nth-child(4){opacity: 0.2;}
 		p{padding:5%}
-		p{border-style:solid;border-top-colors:#E6D8D8 #1A55B0 #3FE319;}/*定义文字p边框格式虚线，实线等，border-color: #E6D8D8;颜色 上边 右边 下边 左边 渐变色没有还早呢*/
+		p{border-style:solid;border-top-colors:#E6D8D8 #1A55B0 #3FE319;background-color: rgba(255,0,0,0.5);}/*定义文字p边框格式虚线，实线等，border-color: #E6D8D8;颜色 上边 右边 下边 左边 渐变色没有还早呢 background-color背景色rgba透明度*/
 		h2{border:3px double #1E13D3;}/*2级标题3像素宽 （宽度）双实线（样式），蓝色（颜色）*/
+		
+		*{
+			padding: 0;
+			margin:0;
+		}
+		h3{
+			font-family: Cambria, "Hoefler Text", "Liberation Serif", Times, "Times New Roman", "serif";
+			color: #DB191D;
+			background-color:#000000;
+		}
+		body{
+			background-color: aliceblue;
+			
+		}
+		
 		</style>
 </head>
+<body>
 <h1>看啥呢，没有！</h1>
 	<p class="three">作为一个示利来判断css3样式表的调用</p>
 <div class="one">
@@ -62,13 +124,28 @@
 		
 		<p class="five">莫高电平时赶  ，紧乌拉框架</p>
 		</div></div>
-	<p class="box1">盒子边框宽</p>
+	<p class="box0">盒子边框宽</p>
 	<p class="five">渐变色出来</p>
 <h2>设置标题是咧</h2>
 	
-<div class="box2"></div>
+<div class="box1"></div>
 <img class="seven"  src="01efdb58d9ba4fa801219c77ece179.jpg@1280w_1l_2o_100sh.jpg"/>
+
 	<p class="seven">段落内边距为父元素宽度5%</p>
-<body>
+<img class="eight" src="传统文化4.png" alt="传统文化"/>
+	<p>中国传统文化，是民族文明、风俗、精神的总称。“文化”的定义，往往是“仁者见仁，智者见智”。简单地说，中国传统文化以儒佛道三家为主干 [1]  。三者相互依存，相互渗透，相互影响，构筑中国传统文化的整体。这三家传统文化之思想，在中国合称为“三教”。 [2] 
+中国传统文化，依据中国历史大系表顺序 [3-4]  ，经历了有巢氏 [5-6]  、燧人氏、伏羲氏、神农氏炎帝 [7]  、黄帝轩辕氏 [7]  、尧、舜、禹等时代 ，《先秦史》云：“吾国开化之迹，可征者始于巢、燧、羲、农。” [3-4]  ；到夏朝建立。之后绵延发展至今。
+中国传统文化中的儒家文化主张“积极进取、建功立业”，为历代儒客尊崇；而且道家文化主张“顺其自然、自我完善”；佛家文化主张“慈爱众生、无私奉献” [2]  [8]  。</p>
+<img class="nine" src="传统文化4.png" alt="创通文化"/>
+	</hr>
+<div class="box2">content_box</div>
+<div class="box3">border_box</div>
+<h3>三级标题背景颜色</h3>
+<div id="box4">
+	<img src="庐山.png" width="160" height="109"><!--图片虚化-->
+	<img src="庐山.png" width="160" height="109">
+	<img src="庐山.png" width="160" height="109">
+	<img src="庐山.png" width="160" height="109">
+	</div>
 </body>
 </html>
